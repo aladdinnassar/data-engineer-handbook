@@ -214,8 +214,6 @@ $$;
 -- CALL insert_cumul_actors(1972);
 -- SELECT * FROM actors ORDER BY actor, asofyear;
 ---------------------------------------------------------------------------------
-*/
-
 DO $$
 BEGIN
 	DELETE FROM actors;  
@@ -228,6 +226,13 @@ END;
 $$;
 
 SELECT * FROM actors ORDER BY actor, asofyear;
+---------------------------------------------------------------------------------
+*/
+
+SELECT
+	*
+FROM actors
+LIMIT 20
   
 
 
